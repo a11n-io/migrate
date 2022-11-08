@@ -20,8 +20,6 @@ var (
 )
 
 type Config struct {
-	ApiKey    string
-	ApiSecret string
 }
 
 type Cerberus struct {
@@ -67,10 +65,7 @@ func (m *Cerberus) Open(url string) (database.Driver, error) {
 
 	instance := cerberus.NewClient(url, apiKey, apiSecret)
 
-	mx, err := WithInstance(instance, &Config{
-		ApiKey:    apiKey,
-		ApiSecret: apiSecret,
-	})
+	mx, err := WithInstance(instance, &Config{})
 	if err != nil {
 		return nil, err
 	}
