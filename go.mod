@@ -1,4 +1,4 @@
-module github.com/a11n-io/migrate/v4
+module github.com/golang-migrate/migrate/v4
 
 require (
 	cloud.google.com/go/spanner v1.34.1
