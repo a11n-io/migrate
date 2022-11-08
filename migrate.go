@@ -919,6 +919,14 @@ func (m *Migrate) lock() error {
 
 	// now try to acquire the lock
 	go func() {
+
+		if m.databaseDrv == nil {
+			fmt.Println("migrate driver is nil")
+			errchan <- fmt.Errorf("migrate driver is nil")
+		} else {
+			fmt.Println("migrate driver is not nil")
+		}
+
 		if err := m.databaseDrv.Lock(); err != nil {
 			errchan <- err
 		} else {

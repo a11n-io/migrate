@@ -81,6 +81,7 @@ func (m *Cerberus) Drop() (err error) {
 }
 
 func (m *Cerberus) Lock() error {
+	fmt.Println("Cerberus Lock")
 	if !m.isLocked.CAS(false, true) {
 		return database.ErrLocked
 	}
@@ -88,6 +89,7 @@ func (m *Cerberus) Lock() error {
 }
 
 func (m *Cerberus) Unlock() error {
+	fmt.Println("Cerberus Unlock")
 	if !m.isLocked.CAS(true, false) {
 		return database.ErrNotLocked
 	}
