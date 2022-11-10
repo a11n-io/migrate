@@ -107,9 +107,7 @@ func (m *Cerberus) Run(migration io.Reader) error {
 
 func (m *Cerberus) executeQuery(query string) error {
 
-	m.client.RunScript(m.context, query)
-
-	return nil
+	return m.client.RunScript(m.context, query)
 }
 
 func (m *Cerberus) SetVersion(version int, dirty bool) error {
