@@ -23,13 +23,13 @@ type Config struct {
 }
 
 type Cerberus struct {
-	client   cerberus.Client
+	client   cerberus.CerberusClient
 	isLocked atomic.Bool
 	context  context.Context
 	config   *Config
 }
 
-func WithInstance(instance cerberus.Client, config *Config) (database.Driver, error) {
+func WithInstance(instance cerberus.CerberusClient, config *Config) (database.Driver, error) {
 	if config == nil {
 		return nil, ErrNilConfig
 	}
