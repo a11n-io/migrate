@@ -40,12 +40,12 @@ func WithInstance(instance cerberus.CerberusClient, config *Config) (database.Dr
 		return nil, err
 	}
 
-	cerberusToken, err := instance.GetToken(ctx)
+	cerberusTokenPair, err := instance.GetToken(ctx)
 	if err != nil {
 		return nil, err
 	}
 
-	c := context.WithValue(ctx, "cerberusToken", cerberusToken)
+	c := context.WithValue(ctx, "cerberusTokenPair", cerberusTokenPair)
 
 	mx := &Cerberus{
 		client:  instance,
