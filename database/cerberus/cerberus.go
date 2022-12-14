@@ -40,7 +40,7 @@ func WithInstance(instance cerberus.CerberusClient, config *Config) (database.Dr
 		return nil, err
 	}
 
-	cerberusTokenPair, err := instance.GetToken(ctx)
+	cerberusTokenPair, err := instance.GetToken()
 	if err != nil {
 		return nil, err
 	}

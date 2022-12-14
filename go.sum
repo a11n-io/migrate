@@ -97,8 +97,8 @@ github.com/Microsoft/go-winio v0.5.1/go.mod h1:JPGBdM1cNvN/6ISo+n8V5iA4v8pBzdOpz
 github.com/Microsoft/go-winio v0.6.0 h1:slsWYD/zyx7lCXoZVlvQrj0hPTM1HI4+v1sIda2yDvg=
 github.com/Microsoft/go-winio v0.6.0/go.mod h1:cTAf44im0RAYeL23bpB+fzCyDH2MJiz2BO69KH/soAE=
 github.com/OneOfOne/xxhash v1.2.2/go.mod h1:HSdplMjZKSmBqAxg5vPj2TmRDmfkzw+cTzAElWljhcU=
-github.com/a11n-io/go-cerberus v0.3.34 h1:V9CBnqjXKw6+xt/hc7yj+NZwClY/+ZBG9DLZk9sYO84=
-github.com/a11n-io/go-cerberus v0.3.34/go.mod h1:XdOzfM+J0Z+V8J96m0T/4HA+fosAXIJz4QIi2RL9QM0=
+github.com/a11n-io/go-cerberus v0.3.39 h1:9gma8UEZDP8BRrEDgEcIxAdVeGc34Km//hq1C53fZJU=
+github.com/a11n-io/go-cerberus v0.3.39/go.mod h1:XdOzfM+J0Z+V8J96m0T/4HA+fosAXIJz4QIi2RL9QM0=
 github.com/ajstarks/svgo v0.0.0-20180226025133-644b8db467af/go.mod h1:K08gAheRH3/J6wwsYMMT4xOr94bZjxIelGM0+d/wbFw=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/apache/arrow/go/arrow v0.0.0-20210818145353-234c94e4ce64/go.mod h1:2qMFB56yOP3KzkB3PbYZ4AlUFg3a88F67TIx5lB/WwY=
