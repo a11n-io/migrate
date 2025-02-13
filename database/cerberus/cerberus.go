@@ -3,11 +3,12 @@ package cerberus
 import (
 	"context"
 	"fmt"
+	"io"
+	nurl "net/url"
+
 	cerberus "github.com/a11n-io/go-cerberus"
 	"github.com/golang-migrate/migrate/v4/database"
 	"go.uber.org/atomic"
-	"io"
-	nurl "net/url"
 )
 
 func init() {
